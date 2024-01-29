@@ -33,35 +33,39 @@ const Contact = () => {
     const templateId = "template_6m9miip"
     const publicKey = "ItAw_N0rHxL70YlfY"
 
-    emailjs
-      .send(
-        serviceId,
-        templateId,
-        {
-          from_name: form.name,
-          to_name: "Mirgubad",
-          from_email: form.email,
-          to_email: "mirgubad@gmail.com",
-          message: form.message,
-        },
-        publicKey
-      )
-      .then(
-        () => {
-          setLoading(false)
-          alert("Thank you.I will get back to you as soon as possible.")
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          })
-        },
-        (error) => {
-          setLoading(false)
-          console.error(error)
-          alert("Something went wrong.")
-        }
-      )
+    if (form.name || form.email || form.message) {
+      emailjs
+        .send(
+          serviceId,
+          templateId,
+          {
+            from_name: form.name,
+            to_name: "Mirgubad",
+            from_email: form.email,
+            to_email: "mirgubad@gmail.com",
+            message: form.message,
+          },
+          publicKey
+        )
+        .then(
+          () => {
+            setLoading(false)
+            alert("Thank you.I will get back to you as soon as possible.")
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            })
+          },
+          (error) => {
+            setLoading(false)
+            console.error(error)
+            alert("Something went wrong.")
+          }
+        )
+    } else {
+      alert("Please fill all fields.")
+    }
   }
 
   return (
