@@ -127,11 +127,11 @@ const experiences = [
     },
 
     {
-        title: "Front End Intern",
+        title: "Front End",
         company_name: "Web Coder",
         icon: webcoder,
         iconBg: "#E6DEDD",
-        date: "April 2023 - Septempber 2023",
+        date: "April 2023 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
