@@ -29,7 +29,7 @@ import airBnb from "./airBnb.png";
 import homeDecor from "./homeDecor.png";
 import baroShop from "./baroShop.png";
 import serviceProject from "./serviceProject.png"
-import tshirtProject from "./3Dtshirt.png"
+import tshirtProject from "./3dtshirt.png"
 import weatherProject from "./weatherapp.png"
 import liveLogo from "./live.jpg"
 
