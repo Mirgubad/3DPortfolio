@@ -20,6 +20,8 @@ import {
     csharp,
     serviceProject,
     nextjs,
+    tshirtProject,
+    weatherProject
 
 } from "../assets";
 
@@ -143,6 +145,30 @@ const experiences = [
 
 
 const projects = [
+
+    {
+        name: "Tshirt Editor 3D",
+        description:
+            "Experience an advanced 3D editor where users have the freedom to customize their T-shirt designs with unparalleled flexibility."
+        ,
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "three.js",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tshirtProject,
+        source_code_link: "https://github.com/Mirgubad/tshirtEditor3D",
+        demo_link: "https://tshirteditor3d.vercel.app/"
+    },
     {
         name: "AirBnb",
         description:
@@ -164,6 +190,40 @@ const projects = [
         ],
         image: airBnb,
         source_code_link: "https://github.com/Mirgubad/airbnbclone",
+        demo_link: "https://airbnbclonemirgubad.vercel.app/"
+    },
+    {
+        name: "Weather App",
+        description:
+            "Dynamic backgrounds change with real-time conditions. Search any location for instant updates and a visually immersive experience. "
+        ,
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: weatherProject,
+        source_code_link: "https://github.com/Mirgubad/weatherApp",
+        demo_link: "https://miriweatherapp.netlify.app/"
+    },
+
+    {
+        name: "Home Decor",
+        description:
+            "Language support.Search algorithm by category,collection.Sorting by price.Support all devices (Full responsive).",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "json server",
+                color: "green-text-gradient",
+            },
+        ],
+        image: homeDecor,
+        source_code_link: "https://github.com/Mirgubad/homeDecor",
     },
     {
         name: "Service",
@@ -181,23 +241,7 @@ const projects = [
         ],
         image: serviceProject,
         source_code_link: "https://github.com/Mirgubad/taskservices",
-    },
-    {
-        name: "Home Decor",
-        description:
-            "Language support.Search algorithm by category,collection.Sorting by price.Support all devices (Full responsive).",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "json server",
-                color: "green-text-gradient",
-            },
-        ],
-        image: homeDecor,
-        source_code_link: "https://github.com/Mirgubad/homeDecor",
+        demo_link: "https://melodious-conkies-cb67f9.netlify.app/"
     },
     {
         name: "BaroShop",
@@ -227,5 +271,6 @@ const projects = [
 
 
 ];
+//https://miriweatherapp.netlify.app/
 
 export { services, technologies, experiences, projects };

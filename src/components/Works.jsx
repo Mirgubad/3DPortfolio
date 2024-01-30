@@ -2,7 +2,7 @@ import {Tilt} from "react-tilt"
 import {motion} from "framer-motion"
 
 import {styles} from "../styles"
-import {github} from "../assets"
+import {github, liveLogo} from "../assets"
 import {SectionWrapper} from "../hoc"
 import {projects} from "../constants"
 import {fadeIn, textVariant} from "../utils/motion"
@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  demo_link,
 }) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
     <Tilt
@@ -30,6 +31,7 @@ const ProjectCard = ({
           alt={name}
           className="w-full h-full object-cover rounded-2xl"
         />
+
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
             onClick={() => window.open(source_code_link, "_blank")}
@@ -43,6 +45,24 @@ const ProjectCard = ({
             />
           </div>
         </div>
+
+        {demo_link && (
+          <div className="absolute right-0 bottom-0 flex justify-end m-3 card-img_hover">
+            <div
+              onClick={() => window.open(demo_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full 
+                       flex justify-center
+                       items-center cursor-pointer
+                       overflow-hidden"
+            >
+              <img
+                src={liveLogo}
+                alt="github"
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="mt-5">

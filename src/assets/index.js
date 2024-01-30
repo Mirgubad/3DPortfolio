@@ -19,7 +19,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import nextjs from "./tech/nextjslogo.webp";
-import postman from "./tech/postman.svg"
 
 
 
@@ -30,6 +29,10 @@ import airBnb from "./airBnb.png";
 import homeDecor from "./homeDecor.png";
 import baroShop from "./baroShop.png";
 import serviceProject from "./serviceProject.png"
+import tshirtProject from "./3Dtshirt.png"
+import weatherProject from "./weatherapp.png"
+import liveLogo from "./live.jpg"
+
 
 export {
   logo,
@@ -57,5 +60,8 @@ export {
   homeDecor,
   baroShop,
   serviceProject,
-  nextjs
+  nextjs,
+  tshirtProject,
+  weatherProject,
+  liveLogo
 };
